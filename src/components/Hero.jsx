@@ -10,7 +10,7 @@ function Hero() {
   return (
     <>
       <section
-        className={`py-36 md:py-52 relative overflow-hidden text-white ${styles.bgGradient}`}
+        className={`py-36 p-4 md:py-52 relative overflow-hidden text-white ${styles.bgGradient}`}
       >
         {/* Backgound */}
         <div className='bg-hero absolute inset-0 bg-no-repeat bg-bottom -z-10'></div>
