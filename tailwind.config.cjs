@@ -11,8 +11,8 @@ module.exports = {
         brandBlue: '#4338CA',
       },
       backgroundImage: {
-        hero: "url('./src/assets/hero.png')",
-        hexagon: "url('./src/assets/hexagon.png')",
+        hero: "url('./public/assets/hero.png')",
+        hexagon: "url('../public/assets/hexagon.png')",
       },
     },
   },
