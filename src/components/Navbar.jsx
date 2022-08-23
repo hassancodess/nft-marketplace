@@ -21,7 +21,9 @@ function Navbar() {
           {/* Flex Container */}
           <div className='flex justify-between items-center text-white'>
             {/* Logo */}
-            <h1 className='text-xl font-bold uppercase'>NFT Marketplace.</h1>
+            <h1 className='text-2xl font-bold uppercase text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-red-600 to-orange-400'>
+              <span className=''>NFT</span> Marketplace.
+            </h1>
             {/* Menu Items */}
             <div className='hidden lg:flex space-x-6 text-sm items-center'>
               <a href='#' className={styles.navLink}>
