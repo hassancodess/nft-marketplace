@@ -5,7 +5,7 @@ import { FaEthereum } from 'react-icons/fa'
 function NFTCard({ img, title, price, likes, sale }) {
   return (
     <>
-      <div className='flex flex-col space-y-10 rounded-lg overflow-hidden border border-slate-400/10 pb-8'>
+      <div className='flex group flex-col space-y-10 rounded-lg overflow-hidden border border-slate-400/10 pb-8 hover:shadow-xl duration-500 ease-in-out hover:shadow-white/5 relative'>
         {/* Image & Counter */}
         <div className='flex flex-col items-start relative'>
           <img src={img} alt='NFT' className='object-cover' />
@@ -33,6 +33,12 @@ function NFTCard({ img, title, price, likes, sale }) {
               <p className='text-sm text-slate-400 '>{likes}</p>
             </div>
           </div>
+        </div>
+        {/* Hover */}
+        <div className='absolute hidden top-1/4 left-1/3 md:left-1/4 group-hover:flex animate-bounce transition-all ease-in-out duration-1000'>
+          <button className='text-sm px-6 py-2 bg-indigo-600 rounded-md hover:bg-indigo-700 duration-200 ease-in-out'>
+            Place bid
+          </button>
         </div>
       </div>
     </>
