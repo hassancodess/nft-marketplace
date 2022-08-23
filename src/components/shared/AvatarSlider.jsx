@@ -10,13 +10,13 @@ import { Autoplay, Pagination } from 'swiper'
 
 // Avataer
 import AvatarCard from '../shared/AvatarCard'
-import avatar1 from '../../assets/avatar1.jpg'
-import avatar2 from '../../assets/avatar2.jpg'
-import avatar3 from '../../assets/avatar3.jpg'
-import avatar4 from '../../assets/avatar4.jpg'
-import avatar5 from '../../assets/avatar5.jpg'
-import avatar6 from '../../assets/avatar6.jpg'
-import avatar7 from '../../assets/avatar7.jpg'
+import avatar1 from '../../assets/avatars/avatar1.jpg'
+import avatar2 from '../../assets/avatars/avatar2.jpg'
+import avatar3 from '../../assets/avatars/avatar3.jpg'
+import avatar4 from '../../assets/avatars/avatar4.jpg'
+import avatar5 from '../../assets/avatars/avatar5.jpg'
+import avatar6 from '../../assets/avatars/avatar6.jpg'
+import avatar7 from '../../assets/avatars/avatar7.jpg'
 
 function AvatarSlider() {
   const users = [
@@ -86,7 +86,7 @@ function AvatarSlider() {
             slidesPerView: 4,
             spaceBetween: 40,
           },
-          1440: {
+          1280: {
             slidesPerView: 5,
             spaceBetween: 50,
           },
