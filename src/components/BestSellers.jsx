@@ -9,7 +9,7 @@ function BestSellers() {
         <div className='container max-w-6xl mx-auto overflow-hidden'>
           <div className='flex flex-col items-center md:items-start space-y-5'>
             {/* Content */}
-            <h1 className='text-2xl md:text-4xl font-bold'>
+            <h1 className='text-2xl md:text-3xl font-medium'>
               Best Creators & Sellers
             </h1>
             <div className='flex justify-center md:justify-between w-full '>
