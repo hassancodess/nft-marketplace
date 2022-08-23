@@ -1,5 +1,6 @@
 import React from 'react'
 import NFTCardsList from './shared/NFTCardsList'
+import { AiOutlineArrowRight } from 'react-icons/ai'
 
 function HotProducts() {
   return (
@@ -21,6 +22,10 @@ function HotProducts() {
             <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8'>
               {/* Card 1 */}
               <NFTCardsList />
+            </div>
+            <div className='md:flex items-center space-x-2 text-slate-400 font-semibold hidden  '>
+              <p>Explore All Items</p>
+              <AiOutlineArrowRight size={12} />
             </div>
           </div>
         </div>
