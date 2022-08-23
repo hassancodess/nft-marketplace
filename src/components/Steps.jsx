@@ -10,14 +10,17 @@ function Steps() {
             <StepCard
               title='Connect your wallet'
               desc='Use Trust Wallet, Metamask or any wallet to connect to the app.'
+              icon='1'
             />
             <StepCard
               title='Create your NFT Item'
               desc='Upload your NFTs and set a title, description and price.'
+              icon='2'
             />
             <StepCard
               title='List them for sale'
               desc='Earn ETH and BIT for all your NFTs that you sell on our marketplace.'
+              icon='3'
             />
           </div>
         </div>
