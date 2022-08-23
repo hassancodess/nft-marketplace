@@ -1,6 +1,6 @@
 import React from 'react'
 import { AiOutlineArrowRight } from 'react-icons/ai'
-import AvatarSlider from './shared/AvatarSlider'
+import AvatarSlider from './AvatarSlider'
 
 function BestSellers() {
   return (

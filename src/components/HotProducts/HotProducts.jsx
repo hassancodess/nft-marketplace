@@ -1,5 +1,5 @@
 import React from 'react'
-import NFTCardsList from './shared/NFTCardsList'
+import NFTCardsList from './NFTCardsList'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 
 function HotProducts() {

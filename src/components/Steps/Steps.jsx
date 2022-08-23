@@ -1,5 +1,5 @@
 import React from 'react'
-import StepCard from './shared/StepCard'
+import StepCard from './StepCard'
 function Steps() {
   return (
     <>

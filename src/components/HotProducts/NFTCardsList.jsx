@@ -1,5 +1,5 @@
 import React from 'react'
-import NFTCard from '../shared/NFTCard'
+import NFTCard from './NFTCard'
 import nfts from '../../data/nfts'
 function NFTCardsList() {
   return (

@@ -9,7 +9,7 @@ import 'swiper/css/navigation'
 import { Autoplay, Pagination } from 'swiper'
 
 // Avatar
-import AvatarCard from '../shared/AvatarCard'
+import AvatarCard from './AvatarCard'
 import users from '../../data/users'
 
 function AvatarSlider() {

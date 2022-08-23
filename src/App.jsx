@@ -1,9 +1,9 @@
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Steps from './components/Steps'
-import BestSellers from './components/BestSellers'
-import HotProducts from './components/HotProducts'
-import CTA from './components/cta/CTA'
+import Navbar from './components/Header/Navbar'
+import Hero from './components/Header/Hero'
+import Steps from './components/Steps/Steps'
+import BestSellers from './components/BestSellers/BestSellers'
+import HotProducts from './components/HotProducts/HotProducts'
+import CTA from './components/CTA/CTA'
 
 function App() {
   return (
