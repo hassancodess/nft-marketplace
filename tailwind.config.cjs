@@ -12,6 +12,7 @@ module.exports = {
       },
       backgroundImage: {
         hero: "url('./src/assets/hero.png')",
+        hexagon: "url('./src/assets/hexagon.png')",
       },
     },
   },
