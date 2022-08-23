@@ -17,7 +17,7 @@ function Navbar() {
   return (
     <>
       <nav className='p-4 bg-slate-900'>
-        <div className='container mx-auto max-w-7xl relative'>
+        <div className='container mx-auto max-w-6xl relative'>
           {/* Flex Container */}
           <div className='flex justify-between items-center text-white'>
             {/* Logo */}
