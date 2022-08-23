@@ -8,6 +8,7 @@ function AvatarCard({ img, name, handle, gradient }) {
         <div className='flex flex-col  '>
           {/* Gradient */}
           <div className={`h-24 ${gradient}`}></div>
+          {/* Avatar */}
           <div className='self-center -mt-12 mb-6'>
             <img
               src={img}
@@ -15,12 +16,8 @@ function AvatarCard({ img, name, handle, gradient }) {
               className=' rounded-full bg-center object-cover w-24 h-24 overflow-hidden'
             />
           </div>
-          {/* Avatar */}
-          {/* <div className='rounded-full w-24 h-24 absolute left-[30%] overflow-hidden -top-3'>
-            <img src={img} alt='' className='object-cover' />
-          </div> */}
           {/* Content */}
-          <div className='text-center '>
+          <div className='text-center mb-6 md:mb-2'>
             <h3 className='text-xl'>{name}</h3>
             <p className='text-slate-400 text-sm'>{handle}</p>
           </div>
