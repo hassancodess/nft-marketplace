@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Gradient */
-bg-gradient {
-  @apply bg-gradient-to-br to-orange-600/20 via-fuchsia-600/20 from-indigo-600/20;
-}
 body {
-  @apply bg-fuchsia-500;
+  @apply bg-slate-900;
 }
