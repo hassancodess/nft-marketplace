@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { AiOutlineMenu } from 'react-icons/ai'
+import { IoClose } from 'react-icons/io5'
 
 function Navbar() {
   const [nav, setNav] = useState(false)
@@ -45,11 +46,15 @@ function Navbar() {
             </div>
             {/* Hamburger Menu */}
             <div className='lg:hidden' onClick={toggleNav}>
-              <AiOutlineMenu size={25} />
+              {nav ? (
+                <IoClose size={28} className='text-white' />
+              ) : (
+                <AiOutlineMenu size={25} />
+              )}
             </div>
             {/* Mobile Menu */}
             {nav && (
-              <div className='absolute top-14 bg-slate-800 w-full px-28 py-8 rounded-lg'>
+              <div className='absolute top-14 bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 z-50 w-full px-28 py-8 rounded-lg'>
                 <div className='flex flex-col items-center space-y-6 '>
                   <a href='#' className={styles.mobileNavLink}>
                     Home
