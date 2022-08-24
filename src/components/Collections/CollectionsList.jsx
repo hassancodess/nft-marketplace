@@ -9,6 +9,7 @@ function CollectionsList() {
         {collections.map((collection) => {
           return (
             <CollectionCard
+              key={collection.title}
               nfts={collection.nfts}
               title={collection.title}
               profile={collection.profile}

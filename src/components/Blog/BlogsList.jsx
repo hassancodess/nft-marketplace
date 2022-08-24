@@ -7,7 +7,14 @@ function BlogsList() {
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
         {/* Collection Card  */}
         {blogs.map((blog) => {
-          return <BlogCard img={blog.img} title={blog.title} desc={blog.desc} />
+          return (
+            <BlogCard
+              key={blog.title}
+              img={blog.img}
+              title={blog.title}
+              desc={blog.desc}
+            />
+          )
         })}
       </div>
     </>
