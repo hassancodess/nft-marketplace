@@ -1,6 +1,6 @@
 # NFT Marketplace
 
-A NFT Marketplace Website
+An NFT Marketplace Website UI
 
 ## Tools / Libraries
 
@@ -15,4 +15,4 @@ A NFT Marketplace Website
 
 ## Screenshots
 
-<!-- ![Alt text](src/assets/preview.jpeg) -->
+![Alt text](src/assets/preview.jpeg)
