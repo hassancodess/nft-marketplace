@@ -6,6 +6,7 @@ import HotProducts from './components/HotProducts/HotProducts'
 import CTA from './components/CTA/CTA'
 import Collections from './components/Collections/Collections'
 import Blog from './components/Blog/Blog'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <CTA />
       <Collections />
       <Blog />
+      <Footer />
     </>
   )
 }
