@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { IoClose } from 'react-icons/io5'
-
+import navLinks from '../../data/navLinks'
 function Navbar() {
   const [nav, setNav] = useState(false)
   const toggleNav = () => {
@@ -27,21 +27,14 @@ function Navbar() {
             </h1>
             {/* Menu Items */}
             <div className='hidden lg:flex space-x-6 text-sm items-center'>
-              <a href='#' className={styles.navLink}>
-                Home
-              </a>
-              <a href='#' className={styles.navLink}>
-                Market
-              </a>
-              <a href='#' className={styles.navLink}>
-                Explore
-              </a>
-              <a href='#' className={styles.navLink}>
-                Exhibition
-              </a>
-              <a href='#' className={styles.navLink}>
-                Artist & Collectors
-              </a>
+              {navLinks.map((link, idx) => {
+                return (
+                  <a key={idx} href='#' className={styles.navLink}>
+                    {link}
+                  </a>
+                )
+              })}
+
               <button className={styles.btn}>Connect Wallet</button>
             </div>
             {/* Hamburger Menu */}
@@ -56,21 +49,13 @@ function Navbar() {
             {nav && (
               <div className='absolute top-14 bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 z-50 w-full px-28 py-8 rounded-lg'>
                 <div className='flex flex-col items-center space-y-6 '>
-                  <a href='#' className={styles.mobileNavLink}>
-                    Home
-                  </a>
-                  <a href='#' className={styles.mobileNavLink}>
-                    Market
-                  </a>
-                  <a href='#' className={styles.mobileNavLink}>
-                    Explore
-                  </a>
-                  <a href='#' className={styles.mobileNavLink}>
-                    Exhibition
-                  </a>
-                  <a href='#' className={styles.mobileNavLink}>
-                    Artist & Collectors
-                  </a>
+                  {navLinks.map((link, idx) => {
+                    return (
+                      <a key={idx} href='#' className={styles.mobileNavLink}>
+                        {link}
+                      </a>
+                    )
+                  })}
                 </div>
               </div>
             )}
