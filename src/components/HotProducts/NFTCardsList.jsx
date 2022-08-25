@@ -27,9 +27,9 @@ function NFTCardsList() {
   }
   return (
     <>
-      {nfts.map((nft) => {
+      {nfts.map((nft, idx) => {
         return (
-          <motion.div variants={childVariants}>
+          <motion.div variants={childVariants} key={idx}>
             <NFTCard
               key={nft.title}
               img={nft.img}

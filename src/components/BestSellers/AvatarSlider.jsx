@@ -12,9 +12,18 @@ import { Autoplay, Pagination } from 'swiper'
 import AvatarCard from './AvatarCard'
 import users from '../../data/users'
 
+// Framer Motion
+import { childVariants, parentVariants } from '../../animations/common'
+import { motion } from 'framer-motion'
+
 function AvatarSlider() {
   return (
-    <div className='text-white h-full max-w-6xl container '>
+    <motion.div
+      variants={parentVariants}
+      initial='hidden'
+      whileInView='show'
+      className='text-white h-full max-w-6xl container '
+    >
       <Swiper
         slidesPerView={5}
         spaceBetween={30}
@@ -46,20 +55,22 @@ function AvatarSlider() {
         modules={[Pagination, Autoplay]}
         className='mySwiper'
       >
-        {users.map((user) => {
+        {users.map((user, idx) => {
           return (
             <SwiperSlide key={user.name}>
-              <AvatarCard
-                img={user.img}
-                name={user.name}
-                handle={user.handle}
-                gradient={user.gradient}
-              />
+              <motion.div variants={childVariants}>
+                <AvatarCard
+                  img={user.img}
+                  name={user.name}
+                  handle={user.handle}
+                  gradient={user.gradient}
+                />
+              </motion.div>
             </SwiperSlide>
           )
         })}
       </Swiper>
-    </div>
+    </motion.div>
   )
 }
 

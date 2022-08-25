@@ -1,42 +1,12 @@
-import React from 'react'
 import NFTCardsList from './NFTCardsList'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 import { motion } from 'framer-motion'
-
+import {
+  parentNFTVariants,
+  parentVariants,
+  childVariants,
+} from '../../animations/hotProducts'
 function HotProducts() {
-  const parentVariants = {
-    hidden: {
-      x: -100,
-      opacity: 0,
-    },
-    show: {
-      x: 0,
-      opacity: 1,
-      transition: { when: 'beforeChildren', staggerChildren: 0.5 },
-    },
-  }
-  const parentNFTVariants = {
-    hidden: {
-      x: -100,
-      opacity: 0,
-    },
-    show: {
-      x: 0,
-      opacity: 1,
-      transition: { when: 'beforeChildren', staggerChildren: 0.15 },
-    },
-  }
-  const childVariants = {
-    hidden: {
-      x: 300,
-      opacity: 0,
-    },
-    show: {
-      x: 0,
-      opacity: 1,
-      // transition: { delay: 0.4 },
-    },
-  }
   return (
     <>
       <section className='p-4 pb-24 text-white'>
@@ -46,7 +16,8 @@ function HotProducts() {
             <motion.div
               variants={parentVariants}
               initial='hidden'
-              animate='show'
+              whileInView='show'
+              viewport={{ once: true }}
               className='flex flex-col items-center space-y-4 '
             >
               <motion.h1
@@ -67,7 +38,8 @@ function HotProducts() {
             <motion.div
               variants={parentNFTVariants}
               initial='hidden'
-              animate='show'
+              whileInView='show'
+              viewport={{ once: true }}
               className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8'
             >
               {/* Card 1 */}

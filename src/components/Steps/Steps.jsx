@@ -1,29 +1,8 @@
 import React from 'react'
 import StepCard from './StepCard'
 import { motion } from 'framer-motion'
+import { parentVariants, childVariants } from '../../animations/common'
 function Steps() {
-  const parentVariants = {
-    hidden: {
-      x: -100,
-      opacity: 0,
-    },
-    show: {
-      x: 0,
-      opacity: 1,
-      transition: { when: 'beforeChildren', staggerChildren: 0.5 },
-    },
-  }
-  const childVariants = {
-    hidden: {
-      x: -300,
-      opacity: 0,
-    },
-    show: {
-      x: 0,
-      opacity: 1,
-      // transition: { },
-    },
-  }
   return (
     <>
       <section className='py-24 p-4'>
@@ -32,7 +11,8 @@ function Steps() {
           <motion.div
             variants={parentVariants}
             initial='hidden'
-            animate='show'
+            whileInView='show'
+            viewport={{ once: true }}
             className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-white gap-6'
           >
             <motion.div variants={childVariants}>

@@ -1,5 +1,4 @@
 import React from 'react'
-
 import CTACardList from './CTACardList'
 import CTAContent from './CTAContent'
 function CTA() {
