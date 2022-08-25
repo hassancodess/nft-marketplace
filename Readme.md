@@ -13,6 +13,7 @@ An NFT Marketplace Website UI
 
 [Live Preview](https://nft-marketplace-hassancodess.vercel.app/)
 
-## Screenshots
+## Screenshots / Video
 
+![Alt text](src/assets/preview.mp4)
 ![Alt text](src/assets/preview.jpeg)
